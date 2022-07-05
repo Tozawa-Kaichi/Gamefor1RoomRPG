@@ -7,7 +7,7 @@ using UnityEngine.UI;
 /// </summary>
 public class RandomRoomController : MonoBehaviour , I_Random
 {
-    [Tooltip("ランダムに選ばれる部屋効果の一覧")]
+    [Tooltip("ランダムに選ばれる部屋効果の一覧 ※0番目のインデックスはNonにしてください")]
     [SerializeField] List<Texture2D> _roomEffectIcons;
 
     [SerializeField] int _percentOfZeroIndex = 10;
@@ -18,9 +18,9 @@ public class RandomRoomController : MonoBehaviour , I_Random
     Texture2D RandomSelected()
     {
         int random = Random.Range(0, 100);
-        if (random < _percentOfZeroIndex)
+        if (random > _percentOfZeroIndex)
         {
-            return _roomEffectIcons[0];
+            return _roomEffectIcons[1];
         }
         return _roomEffectIcons[0];
     }
