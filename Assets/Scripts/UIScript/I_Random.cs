@@ -4,11 +4,8 @@ using UnityEngine;
 /// <summary>
 /// ランダムな要素からなにか動作するスクリプト用インターフェース
 /// </summary>
-public class I_Random : MonoBehaviour
+interface I_Random 
 {
-    interface RandomPool
-    {
-        void RandomPool();
-    }
-
+    void RandomPool();
+    //敵や部屋効果はランダムなプールの中から選ばれるべきである
 }
