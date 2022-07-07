@@ -9,7 +9,12 @@ public class MassScript : MonoBehaviour
     private void Start()
     {
         adress = this.transform.position;
-        status = this.status;
+        switch (this.status)
+        {
+            case Status.StartPosition:
+                //
+                break;
+        }
     }
     public MassScript(Vector2 adress,Status status)
     {
