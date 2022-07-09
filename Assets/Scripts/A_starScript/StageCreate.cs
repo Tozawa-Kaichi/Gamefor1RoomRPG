@@ -1,7 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// 自動で決められたマスのエリアを作るスクリプト
+/// 生成されたマスのステートがランダム且つゲームとして成立すっるようになるべき
+/// 赤坂講師のマインスイーパーが役に立つだろう
+/// </summary>
 public class StageCreate : MonoBehaviour
 {
     [SerializeField] int row = 0;

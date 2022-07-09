@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// ブロックそのものの機能を定義するスクリプト
+/// スペルが間違っている
+/// </summary>
 public class MassScript : MonoBehaviour
 {
+
     private Vector2 adress;
     [SerializeField] private Status status;
     private void Start()
@@ -21,12 +25,4 @@ public class MassScript : MonoBehaviour
 
     }
 }
-public enum Status
-{
-    NonSpace,
-    Wall,
-    StartPosition,
-    GoalPosition,
-    Open,
-    Close
-}
+

@@ -11,8 +11,6 @@ public class RandomRoomController : MonoBehaviour , I_Random
     [SerializeField] List<Texture2D> _roomEffectIcons;
     [Tooltip("ランダムに選ばれる部屋イベントの一覧 ※0番目のインデックスはNonにしてください")]
     [SerializeField] List<Texture2D> _roomEventIcons;
-
-    [SerializeField] int _percentOfZeroIndex = 10;
     public void RandomPool()
     {
         
