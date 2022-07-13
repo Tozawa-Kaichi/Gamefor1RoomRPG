@@ -16,8 +16,10 @@ public class MassScript : MonoBehaviour
         switch (this.status)
         {
             case Status.StartPosition:
-                //
+                //もしスタート地点だっらら行う処理
+
                 break;
+
         }
     }
     public MassScript(Vector2 adress,Status status)
