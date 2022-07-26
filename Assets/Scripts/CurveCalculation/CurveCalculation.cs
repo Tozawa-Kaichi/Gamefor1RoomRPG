@@ -9,7 +9,7 @@ public class CurveCalculation : MonoBehaviour
     [SerializeField] Vector2 _firstPoint;//曲線の開始地点
     [SerializeField] Vector2 _middlePoint;//曲線の中間地点
     [SerializeField] Vector2 _lastPoint;//曲線の終局地点
-    float _answear = 0;
+    //float _answear = 0;
     float a;
     float b;
     float c;
