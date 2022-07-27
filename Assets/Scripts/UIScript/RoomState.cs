@@ -1,7 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class RoomState : MonoBehaviour
+/// <summary>
+/// 部屋が持つべきステート情報
+/// </summary>
+public enum RoomState
 {
+    EmptyRoom,
+    EnemyRoom,
+    CampRoom,
+    BossRoom,
+    
 }
